@@ -1,0 +1,11 @@
+<h2>Register your interest</h2>
+
+<% if params[:email] %>
+	<p>Thanks, we'll let you know if it becomes a reality.</p>
+<% else %>
+	<p>Would you like to see this idea brought to life?</p>
+	<form id="registrations_form">
+		<input type="email" name="email" data-placeholder="Your email address" />
+		<input type="submit" value="Register my interest" />	
+	</form>
+<% end %>

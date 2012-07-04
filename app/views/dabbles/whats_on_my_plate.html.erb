@@ -1,3 +1,44 @@
-<section id="primary_content">
-	<h1>What's on my plate</h1>
+<section id="primary_content" class="panel">
+	<h1>Rate my Plate</h1>
+
+	<p>Snap and share the dinner delights that your mum, dad, sister, brother or you cook up for the family.</p>
+	
+	<h2>Try it out</h2>
+	
+	<p>Snap it, eat it, rate it, share it using the hashtag <a>#ratemyplate</a></p>
+
+	<ul class="plate_grid">
+		<li>
+			<%= image_tag "photos/1.jpg" %>
+			<p><strong>Dish:</strong> Meat &amp; Two Veg<br />
+			<strong>Secret veg dabble:</strong> Apple<br />
+			<strong>Yum factor:</strong> 5/10</p>
+		</li>
+		<li>
+			<%= image_tag "photos/2.jpg" %>
+			<p><strong>Dish:</strong> Curry<br />
+			<strong>Secret veg dabble:</strong> Kale<br />
+			<strong>Yum factor:</strong> 8/10</p>
+		</li>
+		<li>
+			<%= image_tag "photos/3.jpg" %>
+			<p><strong>Dish:</strong> Casserole<br />
+			<strong>Secret veg dabble:</strong> Courgette<br />
+			<strong>Yum factor:</strong> 4/10</p>
+		</li>
+		<li>
+			<%= image_tag "photos/4.jpg" %>
+			<p><strong>Dish:</strong> Roast Dinner<br />
+			<strong>Secret veg dabble:</strong> Spinach<br />
+			<strong>Yum factor:</strong> 4/10</p>
+		</li>
+	</ul>
+	
+	<h2>Tell us what you think of this idea</h2>
+	<%= render "comments" %>
+	
 </section>
+
+<aside id="secondary_content">
+	<%= render "interest_form" %>
+</aside>

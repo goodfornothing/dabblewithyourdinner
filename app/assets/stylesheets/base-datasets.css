@@ -1,50 +1,19 @@
-/* =form */
- 
-  form { 
-    padding-bottom: 10px; 
-  }
-  
-  form fieldset {
-    padding: 0 0 20px;
-  }
+input[type="email"] {
+	border: 1px solid #999999;
+	color: #888;
+	padding: 0 10px;
+	line-height: 2.25em;
+	font-size: 13px;
+	width: 198px;
+	margin-bottom: 10px;
+}
 
-	legend {
-		font-size: 16px;
-		padding-bottom: 16px;
-		color: #E31937;
-	}
-  
-/* =label */
- 
-  label { 
-    display: block; 
-    position: relative; 
-  }
-  
-/* =input */
-
-  .string input { 
-    padding: 5px; 
-    margin-bottom: 1em; 
-    font-size: 1em;
-    border: 1px solid #cccccc;
-  }
- 
- /* =checkbox */
- 
-  .checkbox label {
-    margin-bottom: 0.75em;
-  }
-
- /* =textarea */
-
-  textarea { 
-    font-size: 1em; 
-    padding: 5px; 
-    margin-bottom: 1em; 
-    border: 1px solid #cccccc;
-  }
-
-/* Tables */
-
-	table { margin-bottom: 14px; }
+input[type="submit"] {
+	background: #489F00;
+	color: #ffffff;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	line-height: 2.25em;
+	font-size: 13px;
+}

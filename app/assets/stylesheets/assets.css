@@ -29,19 +29,17 @@
 /* Grid lists */
 
 	.grid_list {
-		padding: 10px 0;
+		padding: 0 0;
 		overflow: hidden;
 		width: 100%;
 	}
 
 	.grid_list li {
 		list-style-type: none;
-		padding: 25px;
 		float: left;
 		margin: 0 25px 25px 0;
-		width: 400px;
-		height: 200px;
-		border: 1px solid #999;
+		width: 450px;
+		height: 338px;
 	}
 	
 	.grid_list li h2 {
@@ -52,12 +50,93 @@
 	.grid_list li:nth-child(2n+2) {
 		margin-right: 0;
 	}
-	
-/* Panels */
 
-	.panel {
-		display: block;
-		clear: both;
-		margin-bottom: 25px;
+/* Plate grid */
+
+	.plate_grid {
+		padding: 0;
+		overflow: hidden;
+		width: 100%;
 	}
+
+	.plate_grid li {
+		list-style-type: none;
+		float: left;
+		margin: 0 15px 15px 0;
+		width: 285px;
+	}
+	
+	.plate_grid li img {
+		width: 285px;
+	}
+	
+	.plate_grid li p {
+		padding: 10px;
+		margin: 0;
+	}
+
+	.plate_grid li p {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	
+	.plate_grid li p strong {
+		color: #489F00;
+		font-weight: normal;
+	}
+
+	.grid_list li:nth-child(4n+4) {
+		margin-right: 0;
+	}
+	
+/* Stuff */
+
+	.dabble_list {
+		padding: 0;
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 48px;
+	}
+
+	.dabble_list li {
+		list-style-type: none;
+		padding: 0;
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+	
+	.dabble_list li:nth-child(6n+6) {
+		margin-right: 0;
+		margin-left: 3px;
+	}
+	
+	.dabble_list li img {
+		width: 146px;
+	}
+	
+	.dabble_list li p strong {
+		display: block;
+	}
+	
+	.dabble_list li p {
+		opacity: 0;
+		display: block;
+		width: 120px;
+		padding: 30px 13px;
+		position: absolute;
+		margin: 0;
+		text-align: center;
+		color: #ffffff;
+		background: #000000;
+		top: 0;
+		left: 0;
+		height: 135px;
+	}
+	
+	.dabble_list li:hover p {
+		opacity: 0.7;
+	}
+	
 	

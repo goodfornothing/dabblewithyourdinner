@@ -1,11 +1,38 @@
-<section id="primary_content">
+<section id="primary_content" class="panel">
 	
 	<h1>Dabble Box</h1>
 	
-	<form>
-		<input type="submit" value="I'm interested" />
-		<label>Your email address</label>
-		<input type="email" name="email_address" />
-	</form>
+	<p>Struggling to get veg into your family meals?</p>
+
+	<p>Fussy kids?
+
+	Got no time to try out new recipes.
+
+	Why not try dabbling with your dinners.
+
+	Quick easy ways to sneak seasonal veg into your dinner routine
+
+	Introducing 'dabble box'. 
+
+	Like the idea of a veg box but have no idea what do with it?</p>
+	
+	<p><%= image_tag "dabble_box_example.gif", :alt => "A dabble box" %></p>
+
+	<p>Dabble box contains 7 family meal portions of seasonal veg cunningly chosen to sneak into seven classic dinners
+
+	Each vegetable comes with dabble instructions, making it super easy to get into your classic meals
+
+	Smuggle in the veg
+
+	Surprise and delight your brood.</p>
+
+	<p>Order online and get delivered&hellip; or pick up from your local supermarket</p>
+	
+	<h2>Tell us what you think of this idea</h2>
+	<%= render "comments" %>
 	
 </section>
+
+<aside id="secondary_content">
+	<%= render "interest_form" %>
+</aside>

@@ -4,7 +4,7 @@
 		
 		<title>Dabble with your Dinner</title>
 		<meta name="description" content="Dabble with your Dinner" />
-		<meta name="keywords" content="dabble, dinner" />
+		<meta name="keywords" content="dabble, dinner, vegetable, kids, meals" />
 		
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<%= stylesheet_link_tag    "application", :media => "all" %>
@@ -14,6 +14,28 @@
 	</head>
 	<body class="<%= "section_#{params[:controller]} view_#{params[:action]}"%>">
 
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=102120799838436";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<header class="container">
+			
+			<%= link_to (image_tag "dabble_with_your_dinner.png", :alt => "Dabble with your Dinner", :id => "hero"), root_path %>
+
+			<section id="introduction">
+				<p><strong>Hacking vegetables into the nations favourite dinners since 2012.</strong></p>
+				<p>Here's some ideas to encourage more dinner dabbling. More vegetable hacks. Ways to help us get more veg in the mix.</p>
+				<p>Have a look around, rate something if you like it, contribute if you feel the vegetable force.</p>
+				<p>Lettuce know what you think, thanks!</p>
+			</section>
+			
+		</header>
+
 		<div id="main" class="container" role="main">
 
 			<%= yield %>
@@ -22,7 +44,7 @@
 		
 		<footer>
 			<div class="container">
-				<p>Dabbles.</p>
+				<p>Brought to you by <a href="http://eatseasonably.co.uk/">Eat Seasonably</a></p>
 			</div>
 		</footer>
 

@@ -1,21 +1,42 @@
 <section id="primary_content">
+
+	<h2>For summer, why not&hellip;</h2>
 	
-	<h1>Dabble with your Dinners</h1>
-	
-	<h2>Why not&hellip;</h2>
-	
-	<ul id="dabble_list">
-		<li>Meal one</li>
-		<li>Meal two</li>
+	<ul class="dabble_list">
+		<li>
+			<%= image_tag "meals/lamb curry.jpeg", :alt => "Curry" %>
+			<p><strong>Curry</strong> Add some quartered tomatoes</p>
+		</li>
+		<li>
+			<%= image_tag "meals/meat n two veg.jpeg", :alt => "Meat 'n' Two Veg" %>
+			<p><strong>Meat &amp; Two Veg</strong> Pod some fresh peas and broad beans and boil for 3 minutes</p>
+		</li>
+		<li>
+			<%= image_tag "meals/roast dinner.jpeg", :alt => "Roast Dinner" %>
+			<p><strong>Roast Dinner</strong> Roast some cherry tomatoes on the vine</p>
+		</li>
+		<li>
+			<%= image_tag "meals/sausage n mash.jpeg", :alt => "Sausage 'n' Mash" %>
+			<p><strong>Sausage &amp; Mash</strong> Chop some watercress leaves and add them to your mash</p>
+		</li>
+		<li>
+			<%= image_tag "meals/spaghetti bolognese.jpg", :alt => "Spaghetti Bolognese" %>
+			<p><strong>Spaghetti Bolognese</strong> Grate some courgette into your mince</p>
+		</li>
+		<li>
+			<%= image_tag "meals/beef casserole I.jpeg", :alt => "Casserole" %>
+			<p><strong>Casserole</strong> Add a big handful of fresh spinach</p>
+		</li>	
 	</ul>
 	
-	<h2>Other ways to dabble</h2>
+	<h2>More ways to dabble, sneaky tweaks, chop and drops&hellip;</h2>
 	
 	<ul class="grid_list">
-		<li><%= link_to "Dabble Box", dabble_box_path %></li>
-		<li><%= link_to "Dabble Remix", dabble_remix_path %></li>
-		<li><%= link_to "What's on my Plate", whats_on_my_plate_path %></li>
-		<li><%= link_to "My colours", my_colours_path %></li>
+		<li><%= link_to (image_tag "dabblebox.jpg", :alt => "Rate my Plate"), dabble_box_path %></li>
+		<li><%= link_to (image_tag "colour.jpg", :alt => "My Colours"), my_colours_path %></li>
+		
+		<li><%= link_to (image_tag "remix.jpg", :alt => "Remix"), dabble_remix_path %></li>
+		<li><%= link_to (image_tag "ratemyplate.jpg", :alt => "Rate my Plate"), whats_on_my_plate_path %></li>
 	</ul>
 	
 </section>
