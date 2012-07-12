@@ -4,7 +4,9 @@ $(document).ready(function(){
 		el = $(el).addClass('js');
 	});
 	
-	$('#registrations_form').each(function(i,el){
+	$('#new_registration').each(function(i,el){
+		
+		$(el).find('label').hide();
 		
 		input = $($(el).find('input[type="email"]')[0]);
 		text = input.data('placeholder');

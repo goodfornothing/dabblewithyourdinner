@@ -4,8 +4,12 @@
 	<p>Thanks, we'll let you know if it becomes a reality.</p>
 <% else %>
 	<p>Would you like to see this idea brought to life?</p>
-	<form id="registrations_form">
-		<input type="email" name="email" data-placeholder="Your email address" />
-		<input type="submit" value="Register my interest" />	
-	</form>
+	
+	<%= simple_form_for @registration do |f| %>
+	  <%= f.input :email, :input_html => { "data-placeholder" => "Your email address" } %>
+	  <%= f.input :idea, :as => "hidden", :input_html => { :value => @idea } %>
+	  <input type="hidden" name="success_redirect" value="<%= @success_redirect %>" />
+	  <%= f.button :submit, :value => "Register my interest" %>
+	<% end %>
+	
 <% end %>

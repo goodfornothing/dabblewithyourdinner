@@ -2,6 +2,8 @@ Dabble::Application.routes.draw do
   
   root :to => "dabbles#index"
   
+  resources :registrations
+  
   match "dabble_box" => "dabbles#dabble_box"
   match "dabble_remix" => "dabbles#dabble_remix"
   match "my_colours" => "dabbles#my_colours"
